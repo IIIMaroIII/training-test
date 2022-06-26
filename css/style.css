@@ -1,0 +1,39 @@
+.alert {
+    font-size: 34px;
+    font-weight: 500;
+    }
+.success {color: green;}
+.warning {color: yellow;}
+.error {color: red;}
+
+
+.social-links .link:focus {
+    color: rgb(15, 179, 23);
+}
+.social-links .link {
+    font-size: 50px;
+    color: rgb(123, 122, 4)
+}
+
+.menu > li {
+    border: 1px solid tomato;
+}
+a[title]
+{
+    color: rgb(28, 107, 81);
+    font-size: large;
+    font-weight: 800;
+    text-decoration: none;
+}
+span {
+    color: blue;
+    font-size: larger;
+}
+a[href="./index.html"]
+{
+    border: 1px solid orangered;
+}
+
+.link:hover {
+    color: tomato;
+}
