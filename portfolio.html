@@ -48,12 +48,40 @@
       </div>
     </header>
     <main>
-      <div class="box-btn">
-        <a href="./index.html" class="main-page">Main page</a>
-        <div class="btn-text">
-          <button class="btn">Sign up</button>
-        </div>
-      </div>
+      <form class="main-form">
+        <label class="form-label">
+          Phone number:
+          <input type="tel" name="Phone-number" autofocus placeholder="+370 000 00 00" />
+        </label>
+        <label class="form-label">
+          Email:
+          <input type="email" name="email" placeholder="Email" />
+        </label>
+        <label class="form-label">
+          Password:
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            minlength="4"
+            maxlength="16"
+          />
+        </label>
+        <p class="text-label">Choose a color:</p>
+        <label class="form-label-color">
+          <input type="checkbox" name="color" value="red" checked />
+          Red
+        </label>
+        <label class="form-label-color">
+          <input type="checkbox" name="color" value="white" />
+          White
+        </label>
+        <label class="form-label-color">
+          <input type="checkbox" name="color" value="green" />
+          Green
+        </label>
+        <button class="btn" type="submit">Submit</button>
+      </form>
     </main>
     <footer class="footer">
       <a class="footer-logo list" href="./index.html"> <span>Web</span>Studio </a>
