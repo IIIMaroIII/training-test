@@ -45,7 +45,6 @@ img {
   margin: auto auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
 }
 
 .list {
@@ -338,6 +337,17 @@ img {
 }
 
 /* Test */
+input,
+textarea,
+.field-general {
+  color: var(--secondary-background-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+}
+
+textarea {
+  resize: none;
+}
 
 .main-form {
   padding-top: 50px;
@@ -345,10 +355,27 @@ img {
   padding-bottom: 50px;
 }
 
+.field-general {
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
 .form-label,
 .text-label {
+  font-family: inherit;
+  font-size: inherit;
+  transition: color 250ms linear;
+  color: var(--text-color);
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.form-label:hover,
+.form-label:focus,
+input:hover,
+input:focus {
+  color: var(--secondary-background-color);
 }
 
 .form-label input {
@@ -360,8 +387,26 @@ img {
   padding-left: 5px;
   padding-bottom: 5px;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .btn {
+  margin-top: 10px;
   display: block;
+}
+
+.btn:not(:last-child) {
+  margin-right: 15px;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.form-label-feedback {
+  font-family: inherit;
+  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-bottom: 5px;
 }
