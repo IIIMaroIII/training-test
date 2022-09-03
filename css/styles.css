@@ -32,8 +32,13 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-img {
+/* img {
   display: block;
+} */
+html,
+body {
+  height: 100%;
+  line-height: 1;
 }
 
 .flex {
@@ -106,9 +111,6 @@ img {
   display: flex;
 }
 
-.site-nav-item {
-  /* background-color: tomato; */
-}
 .site-nav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -151,7 +153,7 @@ img {
   color: var(--accent-color);
 }
 
-/* Hero */
+/* Hero
 
 .hero {
   background-color: var(--secondary-background-color);
@@ -186,17 +188,17 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-color-secondary);
-}
+} */
 
 /* Section General*/
 
-.section-title {
+/* .section-title {
   color: var(--title-text-color);
-}
+} */
 
 /* Section Features */
 
-.features-list {
+/* .features-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -216,10 +218,10 @@ img {
 .features-text {
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* Features */
-
+/* 
 .container > .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -235,9 +237,10 @@ img {
   line-height: 1.17;
   text-align: center;
 }
+*/
 
 /* Section Team */
-
+/* 
 .section.team {
   background-color: var(--third-background-color);
 }
@@ -256,7 +259,7 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
+} */
 
 /* Footer */
 
@@ -291,7 +294,7 @@ img {
 }
 
 /* Portfolio */
-
+/* 
 .button-list {
   display: flex;
 }
@@ -309,7 +312,7 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* Benefits */
 
@@ -336,77 +339,21 @@ img {
   line-height: 1.88;
 }
 
-/* Test */
-input,
-textarea,
-.field-general {
-  color: var(--secondary-background-color);
-  border: 1px solid var(--accent-color);
-  border-radius: 3px;
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+}
+.image-slider {
+  padding: 30px 0 70px 0;
 }
 
-textarea {
-  resize: none;
+.image-slider__wrapper {
 }
-
-.main-form {
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
+.image-slider__slide {
 }
-
-.field-general {
-  max-width: 500px;
-  padding: 15px;
-  margin-bottom: 10px;
+.image-slider__image {
+  text-align: center;
 }
-
-.form-label,
-.text-label {
-  font-family: inherit;
-  font-size: inherit;
-  transition: color 250ms linear;
-  color: var(--text-color);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.form-label:hover,
-.form-label:focus,
-input:hover,
-input:focus {
-  color: var(--secondary-background-color);
-}
-
-.form-label input {
-  padding: 5px;
-}
-
-.form-label-color {
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-.btn {
-  margin-top: 10px;
-  display: block;
-}
-
-.btn:not(:last-child) {
-  margin-right: 15px;
-}
-
-.btn-group {
-  display: flex;
-}
-
-.form-label-feedback {
-  font-family: inherit;
-  font-size: inherit;
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin-bottom: 5px;
+.image-slider__image img {
+  max-width: 100%;
 }

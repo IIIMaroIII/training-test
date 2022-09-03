@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
@@ -49,95 +50,26 @@
       </div>
     </header>
     <main>
-      <form class="main-form">
-        <fieldset class="field-general">
-          <legend>General information</legend>
-          <label class="form-label">
-          User name:
-          <input type="text" name="user-name" placeholder="User name" autofocus required />
-        </label>
-        <label class="form-label">
-          number:
-          <input type="number" name="number" value="0" min="4" max="10" placeholder="Quantity" required/>
-        </label>
-        <label class="form-label">
-          Phone number:
-          <input type="tel" name="Phone-number" autofocus placeholder="+370 000 00 00" />
-        </label>
-        </fieldset>
-        <fieldset class="field-general">
-          <legend>Secondary information</legend>
-          <label class="form-label">
-          Email:
-          <input type="email" name="email" placeholder="Email" />
-        </label>
-        <label class="form-label">
-          Password:
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            minlength="4"
-            maxlength="16"
-          />
-        </label>
-        </fieldset>
-        <p class="text-label">Choose a color:</p>
-        <label class="form-label-color">
-          <input type="checkbox" name="color" value="red" checked />
-          Red
-        </label>
-        <label class="form-label-color">
-          <input type="checkbox" name="color" value="white" />
-          White
-        </label>
-        <label class="form-label-color">
-          <input type="checkbox" name="color" value="green" />
-          Green
-        </label>
-        <label class="form-label">
-          Range:
-          <input type="range" value="1" name="range" min="1" max="10" placeholder="range" />
-        </label>
-        <label class="form-label">
-          Date
-          <input type="date" min="1920-01-01" max="2022-07-30" />
-        </label>
-
-        <label class="form-label">
-          Time
-          <input type="time" />
-        </label>
-
-        <label class="form-label">
-          Date and time
-          <input type="datetime-local" min="1920-01-01T00:00" max="2022-07-30T00:00" />
-        </label>
-        <label class="form-label-feedback">
-          Feedback
-          <textarea name="feedback" rows="5" placeholder="Type your message here..."></textarea>
-        </label>
-        <label class="form-label" for="size">Size</label>
-        <select name="size" id="size">
-          <option value="xs">Tiny</option>
-          <option value="s">Small</option>
-          <option value="m">Medium</option>
-          <option value="l">Bigger</option>
-        </select class="form-label">
-        <label class="form-label" for="fav">Choose your State where`re you live</label>
-        <input list="state" name="fav" id="fav" />
-        <datalist id="state">
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-        </datalist>
-        <div class="btn-group">
-          <button class="btn">Active button</button>
-<button class="btn" disabled>Disabled button</button>
-        <button class="btn" type="submit">Submit</button>
+      <div class="wrapper">
+        <h1 class="title">Slider</h1>
+        <div class="image-slider swiper-container">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image"><img src="./images/igor.jpg" alt="#" /></div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image"><img src="./images/mihail.jpg" alt="#" /></div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image"><img src="./images/nikolay.jpg" alt="#" /></div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
-      </form>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -155,5 +87,11 @@
         </address>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+      const swiper = new Swiper('image-slider');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
